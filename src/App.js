@@ -1,6 +1,3 @@
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 import React from "react";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { BrowserRouter, Route, Switch } from "react-router-dom";

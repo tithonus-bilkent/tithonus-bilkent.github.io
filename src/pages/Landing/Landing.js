@@ -9,7 +9,7 @@ export default function Landing() {
           <h1 className="title">Tithonus</h1>
           <p className="description">The Code Review Quality Checker</p>
           <div className="row" style={{ padding: "0 10%", marginRight: 0 }}>
-            <div className=" col col-landing-card">
+            <div className="col">
               <div className="hover-card at-card">
                 <div className="hover-card-title">Developers</div>
                 <p className="hover-card-value ">Javid Baghirov</p>
@@ -20,14 +20,14 @@ export default function Landing() {
               </div>
             </div>
 
-            <div className=" col col-landing-card">
+            <div className="col">
               <div className="hover-card at-card">
                 <div className="hover-card-title">Supervisor</div>
                 <p className="hover-card-value ">Eray Tüzün</p>
               </div>
             </div>
 
-            <div className=" col col-landing-card">
+            <div className="col">
               <div className="hover-card at-card">
                 <div className="hover-card-title">Innovation Expert</div>
                 <p className="hover-card-value ">TBD</p>

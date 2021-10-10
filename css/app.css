@@ -1,0 +1,207 @@
+body {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.background-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+.at-content-container {
+  padding-top: 9%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.description-container {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+  padding: 2% 10%;
+  color: white;
+  margin: 5% 0;
+}
+.title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+.description {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10%;
+}
+.at-inner-content {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center !important;
+}
+
+.nav-link {
+  margin-left: 2%;
+}
+
+.at-card {
+  margin: 2%;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 19px 0px rgb(31 38 135 / 15%);
+  backdrop-filter: blur(19px);
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.col-landing-card {
+  flex: 0 0 auto;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 3%;
+}
+.hover-card {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.hover-card:hover {
+  color: black;
+  transform: scale(1.04);
+
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.report-card {
+  display: flex;
+  flex-flow: column;
+  height: calc(90vh - 64px);
+}
+
+.iframe-flex {
+  flex: 1 1 auto;
+}
+.iframe-container {
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.hover-card-title {
+  font-weight: 900;
+  padding: 20px 0;
+  font-size: 18px;
+}
+.hover-card-value {
+  font-weight: 500;
+}
+.hover-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.img-card {
+  width: 20%;
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Poppins, sans-serif !important;
+  vertical-align: baseline;
+}

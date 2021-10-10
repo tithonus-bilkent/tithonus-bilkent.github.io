@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
@@ -8,16 +8,7 @@ import Typography from "@mui/material/Typography";
 import BugReportIcon from "@mui/icons-material/BugReport";
 
 const Header = (props) => {
-  const [root, setRoot] = useState(true);
   const { history } = props;
-
-  useEffect(() => {
-    if (history.location.pathname.split("/")[1] !== "") {
-      setRoot(false);
-    } else {
-      setRoot(true);
-    }
-  }, [history.location]);
 
   const navigateTo = (item) => {
     console.log(item);

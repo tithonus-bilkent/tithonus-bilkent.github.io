@@ -1,22 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ImageCard from "../../components/ImageCard/ImageCard";
 
-export default function Landing(props) {
-  const { history } = props;
-  const [active, setActive] = useState("");
-
-  const setActiveLink = () =>
-    setActive(history.location.pathname.split("/").pop());
-
-  useEffect(() => {
-    setActiveLink();
-  }, [history.location]);
-
-  const navigateTo = (item) => {
-    console.log(item);
-    history.push(item);
-  };
-
+export default function Landing() {
   return (
     <div className="at-content-container">
       <div className="at-inner-content">

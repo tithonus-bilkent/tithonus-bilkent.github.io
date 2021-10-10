@@ -1,12 +1,12 @@
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import React from "react";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Landing from "./pages/Landing/Landing";
 import Reports from "./pages/Reports/Reports";
-import "./App.css";
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const darkTheme = createTheme({
   palette: {

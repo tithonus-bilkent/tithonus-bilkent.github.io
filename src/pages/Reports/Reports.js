@@ -5,7 +5,8 @@ export default function Reports() {
   return (
     <div className="at-content-container" style={{ paddingTop: "0" }}>
       <div className="row iframe-container">
-        <IFrameCard></IFrameCard>
+        <IFrameCard reportName="specifications"></IFrameCard>
+        <IFrameCard reportName="analysis"></IFrameCard>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
-import report from "~/reports/ProjectSpecifications.pdf";
+import { Reports } from "~/reports";
 
-const PdfViewer = () => {
+const PdfViewer = (props) => {
   return (
     <div className="col-6">
       <div className="at-card report-card">
-        <iframe className="iframe-flex" src={report} />
+        <iframe className="iframe-flex" src={Reports[props.reportName]} />
       </div>
     </div>
   );

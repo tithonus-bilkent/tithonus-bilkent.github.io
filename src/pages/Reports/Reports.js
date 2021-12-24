@@ -7,6 +7,7 @@ export default function Reports() {
       <div className="row iframe-container">
         <IFrameCard reportName="specifications"></IFrameCard>
         <IFrameCard reportName="analysis"></IFrameCard>
+        <IFrameCard reportName="highLevelDesign"></IFrameCard>
       </div>
     </div>
   );

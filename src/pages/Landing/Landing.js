@@ -30,7 +30,7 @@ export default function Landing() {
             <div className="col">
               <div className="hover-card at-card">
                 <div className="hover-card-title">Innovation Expert</div>
-                <p className="hover-card-value ">TBD</p>
+                <p className="hover-card-value ">Murat Ergun</p>
               </div>
             </div>
           </div>

@@ -8,6 +8,13 @@ export default function Landing() {
         <div style={{ textAlign: "center" }}>
           <h1 className="title">Tithonus</h1>
           <p className="description">The Code Review Quality Checker</p>
+          <button
+            type="button"
+            className="btn btn-primary go-to-app-btn"
+            onClick={() => window.open("http://130.61.213.181", "_blank")}
+          >
+            Click here to go to the Tithonus application!
+          </button>
           <div className="row" style={{ padding: "0 10%", marginRight: 0 }}>
             <div className="col">
               <div className="hover-card at-card">

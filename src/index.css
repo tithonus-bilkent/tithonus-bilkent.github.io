@@ -39,7 +39,9 @@ body {
   font-size: 26px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 10%;
+}
+.go-to-app-btn {
+  margin: 50px;
 }
 .at-inner-content {
   min-height: calc(100vh - 80px);

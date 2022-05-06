@@ -3,6 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Landing from "./pages/Landing/Landing";
+import Poster from "./pages/Poster/Poster";
 import Reports from "./pages/Reports/Reports";
 
 const darkTheme = createTheme({
@@ -24,6 +25,11 @@ const App = () => {
               exact
               path="/reports"
               render={(props) => <Reports {...props} authed={true} />}
+            />
+            <Route
+              exact
+              path="/poster"
+              render={(props) => <Poster {...props} authed={true} />}
             />
           </Switch>
         </ThemeProvider>

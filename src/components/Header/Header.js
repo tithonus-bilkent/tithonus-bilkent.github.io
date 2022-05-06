@@ -76,6 +76,9 @@ const Header = (props) => {
           <a className="nav-link" onClick={() => navigateTo("/")}>
             Home
           </a>
+          <a className="nav-link" onClick={() => navigateTo("/poster")}>
+            Poster
+          </a>
           <a className="nav-link" onClick={() => navigateTo("/reports")}>
             Reports
           </a>

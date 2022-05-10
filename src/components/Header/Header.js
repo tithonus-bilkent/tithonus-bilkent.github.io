@@ -38,7 +38,13 @@ const Header = () => {
                         <Menu />
                     </IconButton>
                 ) : null}
-                <div style={{ margin: isTabletOrBelow ? "auto" : "" }}>
+                <div
+                    style={{
+                        margin: isTabletOrBelow ? "auto" : "",
+                        position: "relative",
+                        left: isTabletOrBelow ? "-26px" : "",
+                    }}
+                >
                     <Title />
                 </div>
                 {!isTabletOrBelow ? <ActionsBar /> : null}

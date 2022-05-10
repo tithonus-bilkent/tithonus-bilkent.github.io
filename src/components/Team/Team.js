@@ -10,7 +10,7 @@ export const Team = () => {
                 <Typography variant="h4" color="primary.light">
                     Meet the team
                 </Typography>
-                <AvatarGroup style={{ marginLeft: "20px" }} max={7}>
+                <AvatarGroup style={{ marginLeft: "20px" }} max={6}>
                     <Tooltip title="Ziya Muktharov">
                         <Avatar src="images/ziya.jpg" />
                     </Tooltip>

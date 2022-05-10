@@ -19,7 +19,10 @@ import ArticleIcon from "@mui/icons-material/Article";
 const Landing = () => {
     return (
         <Container>
-            <Box display="flex" style={{ alignItems: "center" }}>
+            <Box
+                display="flex"
+                style={{ alignItems: "center", flexWrap: "wrap" }}
+            >
                 <Typography variant="h3" color="primary.light">
                     Tithonus
                 </Typography>
@@ -28,7 +31,7 @@ const Landing = () => {
                     color="primary.light"
                     style={{ marginLeft: "10px", marginTop: "10px" }}
                 >
-                    &mdash; The Code Review Quality Checker
+                    The Code Review Quality Checker
                 </Typography>
             </Box>
             <Box marginTop="20px">

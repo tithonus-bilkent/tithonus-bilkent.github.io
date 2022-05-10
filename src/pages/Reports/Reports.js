@@ -64,10 +64,9 @@ export default function Reports() {
                                 return (
                                     <ListItem key={item.reportName}>
                                         <Button
-                                            // href={item.path}
                                             onClick={() => {
                                                 window.open(
-                                                    window.location.href +
+                                                    "https://tithonus-bilkent.github.io/reports/" +
                                                         item.path,
                                                     "_blank"
                                                 );

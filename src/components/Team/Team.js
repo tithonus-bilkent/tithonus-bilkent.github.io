@@ -101,6 +101,25 @@ export const Team = () => {
 
             <Box marginTop="10px">
                 <Typography variant="h5" color="primary.light">
+                    Technical Advisor
+                </Typography>
+                <Box
+                    display="flex"
+                    style={{
+                        flexWrap: "wrap",
+                        alignItems: "center",
+                        justifyContent: "center",
+                    }}
+                >
+                    <TeamCard
+                        name="Haluk Altunel"
+                        imgSrc="images/haluk.jpeg"
+                        linkedInLink="https://www.linkedin.com/in/halukaltunel/"
+                    />
+                </Box>
+            </Box>
+            <Box marginTop="10px">
+                <Typography variant="h5" color="primary.light">
                     Innovation Expert
                 </Typography>
                 <Box

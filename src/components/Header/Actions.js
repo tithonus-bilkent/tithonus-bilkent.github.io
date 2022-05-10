@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Routes } from "../../routes/Routes";
 import LinkIcon from "@mui/icons-material/Link";
 
@@ -33,7 +33,7 @@ const Container = styled.div`
     display: flex;
 `;
 
-const StyledLink = styled(RouterLink)`
+const StyledLink = styled(Link)`
     text-decoration: none;
 `;
 

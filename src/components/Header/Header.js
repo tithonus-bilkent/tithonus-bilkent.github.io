@@ -52,7 +52,7 @@ const Header = () => {
                         style={{
                             display: "flex",
                             alignItems: "center",
-                            padding: "20px 0px 0px 10px",
+                            padding: "20px 0px 0px 15px",
                         }}
                     >
                         <Title />

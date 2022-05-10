@@ -62,7 +62,7 @@ const Header = () => {
                     >
                         <Title />
                     </Box>
-                    <ActionsList />
+                    <ActionsList onLinkClick={handleDrawerToggle} />
                 </Drawer>
             </Toolbar>
         </AppBar>

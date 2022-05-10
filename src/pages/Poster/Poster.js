@@ -1,10 +1,30 @@
 import React from "react";
-import Poster from "../../assets/Poster.png";
+import styled from "@emotion/styled";
+import { Typography } from "@mui/material";
 
-export default function Landing() {
-  return (
-    <div style={{ textAlign: "center", margin: "25px 0" }}>
-      <img style={{ maxWidth: "80%" }} src={Poster} alt="Poster" />
-    </div>
-  );
-}
+const Poster = () => {
+    return (
+        <Container>
+            <img
+                style={{ maxWidth: "95%" }}
+                src="images/Poster.png"
+                alt="Poster"
+            />
+        </Container>
+    );
+};
+
+const Container = styled.div`
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        display: block;
+    }
+`;
+
+export default Poster;

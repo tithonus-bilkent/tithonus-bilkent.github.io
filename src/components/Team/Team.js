@@ -71,11 +71,7 @@ export const Team = () => {
                         justifyContent: "center",
                     }}
                 >
-                    <TeamCard
-                        name="Eray Tüzün"
-                        initials="ET"
-                        color={deepOrange[500]}
-                    />
+                    <TeamCard name="Eray Tüzün" imgSrc="images/eray.jpeg" />
                 </Box>
             </Box>
 

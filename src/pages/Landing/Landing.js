@@ -15,26 +15,24 @@ import ImageIcon from "@mui/icons-material/Image";
 import Team from "~/components/Team/Team";
 import { Routes } from "~/routes/Routes";
 import ArticleIcon from "@mui/icons-material/Article";
+import Features from "~/components/Features/Features";
 
 const Landing = () => {
     return (
         <Container>
-            <Box
-                display="flex"
-                style={{ alignItems: "center", flexWrap: "wrap" }}
-            >
+            <Box>
                 <Typography variant="h3" color="primary.light">
                     Tithonus
                 </Typography>
                 <Typography
                     variant="h5"
                     color="primary.light"
-                    style={{ marginLeft: "10px", marginTop: "10px" }}
+                    style={{ marginLeft: "5px", marginTop: "10px" }}
                 >
-                    The Code Review Quality Checker
+                    The Next-Gen Code Review Tool
                 </Typography>
             </Box>
-            <Box marginTop="20px">
+            <Box marginTop="40px">
                 <Typography color="primary.light" align="justify">
                     Bugs in codebases can be costly in terms of the damage they
                     may do. Luckily processes like code reviews exist - that can
@@ -67,7 +65,7 @@ const Landing = () => {
                 </Button>
             </ButtonContainer>
 
-            <Box marginTop="20px">
+            <Box marginTop="40px">
                 <Typography variant="h4" color="primary.light">
                     Documents
                 </Typography>
@@ -113,7 +111,19 @@ const Landing = () => {
                 </List>
                 <Typography color="primary.light"></Typography>
             </Box>
-            <Box marginTop="20px">
+
+            <Box marginTop="40px">
+                <Typography
+                    variant="h4"
+                    color="primary.light"
+                    style={{ marginBottom: "20px" }}
+                >
+                    Application Features
+                </Typography>
+                <Features />
+            </Box>
+
+            <Box marginTop="60px">
                 <Team />
             </Box>
         </Container>

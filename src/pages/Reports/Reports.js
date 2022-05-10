@@ -7,21 +7,84 @@ import {
     AccordionDetails,
     Card,
     CardContent,
+    List,
+    Button,
+    ListItem,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import IFrameCard from "../../components/PdfViewer/PdfViewer";
 
 const ITEMS = [
-    { title: "User Manual", reportName: "userManual" },
-    { title: "Final Report", reportName: "final" },
-    { title: "Low Level Design", reportName: "lowLevelDesign" },
-    { title: "High Level Design", reportName: "highLevelDesign" },
-    { title: "Analysis", reportName: "analysis" },
-    { title: "Specifications", reportName: "specifications" },
+    {
+        title: "User Manual",
+        reportName: "userManual",
+        path: "UserManual.pdf",
+    },
+    {
+        title: "Final Report",
+        reportName: "final",
+        path: "Final.pdf",
+    },
+    {
+        title: "Low Level Design",
+        reportName: "lowLevelDesign",
+        path: "LowLevelDesign.pdf",
+    },
+    {
+        title: "High Level Design",
+        reportName: "highLevelDesign",
+        path: "HighLevelDesign.pdf",
+    },
+    {
+        title: "Analysis",
+        reportName: "analysis",
+        path: "Analysis.pdf",
+    },
+    {
+        title: "Specifications",
+        reportName: "specifications",
+        path: "ProjectSpecifications.pdf",
+    },
 ];
 
 export default function Reports() {
+    console.log(window.location.href);
+    if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+        )
+    ) {
+        return (
+            <Container>
+                <Card>
+                    <CardContent>
+                        <List>
+                            {ITEMS.map((item) => {
+                                return (
+                                    <ListItem key={item.reportName}>
+                                        <Button
+                                            // href={item.path}
+                                            onClick={() => {
+                                                window.open(
+                                                    window.location.href +
+                                                        item.path,
+                                                    "_blank"
+                                                );
+                                            }}
+                                            color="success"
+                                        >
+                                            {item.title}
+                                        </Button>
+                                    </ListItem>
+                                );
+                            })}
+                        </List>
+                    </CardContent>
+                </Card>
+            </Container>
+        );
+    }
     return (
         <Container>
             <Card>

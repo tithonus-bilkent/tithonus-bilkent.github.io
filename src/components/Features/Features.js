@@ -5,7 +5,7 @@ import { Check, AutoGraph, TableRows } from "@mui/icons-material";
 
 const Features = () => {
     return (
-        <Container>
+        <InnerContainer>
             <Image
                 src="images/ReviewConfirmation.png"
                 className="review-confirmation-image"
@@ -47,11 +47,11 @@ const Features = () => {
                     their review performances.
                 </Typography>
             </TextContainer>
-        </Container>
+        </InnerContainer>
     );
 };
 
-const Container = styled.div`
+const InnerContainer = styled.div`
     display: grid;
     column-gap: 50px;
     row-gap: 50px;

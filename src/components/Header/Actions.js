@@ -10,17 +10,20 @@ const Actions = (props) => {
     return (
         <Container className={className}>
             <StyledLink to={Routes.Home}>
-                <Button>Home</Button>
+                <Button color="success">Home</Button>
             </StyledLink>
             <StyledLink to={Routes.Poster}>
-                <Button>Poster</Button>
+                <Button color="success">Poster</Button>
             </StyledLink>
             <StyledLink to={Routes.Reports}>
-                <Button>Reports</Button>
+                <Button color="success">Reports</Button>
             </StyledLink>
             <Button
                 variant="contained"
-                onClick={() => window.open("http://130.61.213.181", "_blank")}
+                color="success"
+                onClick={() =>
+                    window.open(process.env.REACT_APP_TITHONUS_URL, "_blank")
+                }
                 endIcon={<LinkIcon />}
             >
                 Go To Application

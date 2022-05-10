@@ -10,7 +10,6 @@ import {
     useTheme,
 } from "@mui/material";
 import React, { useState } from "react";
-import { withRouter } from "react-router-dom";
 import Actions from "./Actions";
 import Title from "./Title";
 
@@ -83,4 +82,4 @@ const ActionsBar = styled(Actions)`
     }
 `;
 
-export default withRouter(Header);
+export default Header;

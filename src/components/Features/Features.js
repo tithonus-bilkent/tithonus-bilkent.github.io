@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Grid, Typography } from "@mui/material";
+import { Avatar, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import { Check, AutoGraph, TableRows } from "@mui/icons-material";
 

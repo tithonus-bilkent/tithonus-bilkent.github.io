@@ -1,8 +1,16 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import {
+    Card,
+    CardContent,
+    CardMedia,
+    IconButton,
+    Typography,
+} from "@mui/material";
+import styled from "@emotion/styled";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const TeamCard = (props) => {
-    const { imgSrc, name, initials, color } = props;
+    const { imgSrc, name, initials, color, linkedInLink, githubLink } = props;
 
     return (
         <Card sx={{ width: 320, margin: "15px" }}>
@@ -29,12 +37,36 @@ const TeamCard = (props) => {
                 </div>
             )}
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    align="center"
+                >
                     {name}
                 </Typography>
+                <IconsContainer>
+                    {linkedInLink ? (
+                        <IconButton href={linkedInLink} target="_blank">
+                            <LinkedIn />
+                        </IconButton>
+                    ) : null}
+                    {githubLink ? (
+                        <IconButton href={githubLink} target="_blank">
+                            <GitHub />
+                        </IconButton>
+                    ) : null}
+                </IconsContainer>
             </CardContent>
         </Card>
     );
 };
+
+const IconsContainer = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
 
 export default TeamCard;

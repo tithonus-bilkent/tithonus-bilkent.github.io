@@ -46,16 +46,35 @@ export const Team = () => {
                         justifyContent: "center",
                     }}
                 >
-                    <TeamCard imgSrc="images/ziya.jpg" name="Ziya Muktharov" />
+                    <TeamCard
+                        imgSrc="images/ziya.jpg"
+                        name="Ziya Muktharov"
+                        linkedInLink="https://www.linkedin.com/in/ziyaza/"
+                        githubLink="https://github.com/ZiyaZa"
+                    />
                     <TeamCard
                         imgSrc="images/mohi.jpg"
                         name="Mokhlaroyim Raupova"
+                        linkedInLink="https://www.linkedin.com/in/mohlaroyim-raupova-a2a107195/"
+                        githubLink="https://github.com/mohlaroyim"
                     />
-                    <TeamCard imgSrc="images/osama.jpg" name="Osama Tanveer" />
-                    <TeamCard imgSrc="images/sunny.jpeg" name="Mannan Abdul" />
+                    <TeamCard
+                        imgSrc="images/osama.jpg"
+                        name="Osama Tanveer"
+                        linkedInLink="https://www.linkedin.com/in/osama-tanveer/"
+                        githubLink="https://github.com/osamatanveer"
+                    />
+                    <TeamCard
+                        imgSrc="images/sunny.jpeg"
+                        name="Mannan Abdul"
+                        linkedInLink="https://www.linkedin.com/in/abdul-mannan-0601a2192/"
+                        githubLink="https://github.com/abdulmannan1998"
+                    />
                     <TeamCard
                         imgSrc="images/javid.jpeg"
                         name="Javid Baghirov"
+                        linkedInLink="https://www.linkedin.com/in/caqqolu/"
+                        githubLink="https://github.com/Jaaw1d"
                     />
                 </Box>
             </Box>
@@ -71,7 +90,12 @@ export const Team = () => {
                         justifyContent: "center",
                     }}
                 >
-                    <TeamCard name="Eray Tüzün" imgSrc="images/eray.jpeg" />
+                    <TeamCard
+                        name="Eray Tüzün"
+                        imgSrc="images/eray.jpeg"
+                        linkedInLink="https://www.linkedin.com/in/tuzuneray/"
+                        githubLink="https://github.com/eraytuzun"
+                    />
                 </Box>
             </Box>
 
@@ -91,6 +115,7 @@ export const Team = () => {
                         name="Murat Ergun"
                         initials="ME"
                         color={deepPurple[500]}
+                        linkedInLink="https://www.linkedin.com/in/muratergun/"
                     />
                 </Box>
             </Box>

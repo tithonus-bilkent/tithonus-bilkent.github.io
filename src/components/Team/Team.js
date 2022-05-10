@@ -27,7 +27,10 @@ export const Team = () => {
                         <Avatar src="images/javid.jpeg" />
                     </Tooltip>
                     <Tooltip title="Eray Tüzün">
-                        <Avatar sx={{ bgcolor: deepOrange[500] }}>ET</Avatar>
+                        <Avatar src="images/eray.jpeg" />
+                    </Tooltip>
+                    <Tooltip title="Haluk Altunel">
+                        <Avatar src="images/haluk.jpeg" />
                     </Tooltip>
                     <Tooltip title="Murat Ergun">
                         <Avatar sx={{ bgcolor: deepPurple[500] }}>ME</Avatar>

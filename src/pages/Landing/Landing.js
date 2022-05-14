@@ -8,6 +8,7 @@ import {
     Avatar,
 } from "@mui/material";
 import React from "react";
+import ReactPlayer from "react-player/youtube";
 import styled from "@emotion/styled";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Link } from "react-router-dom";
@@ -31,6 +32,9 @@ const Landing = () => {
                 >
                     The Next-Gen Code Review Tool
                 </Typography>
+            </Box>
+            <Box marginTop="40px" display="flex" style={{ justifyContent: "center" }}>
+                <ReactPlayer url="https://www.youtube.com/watch?v=7xm70bfybMc" controls="true" />
             </Box>
             <Box marginTop="40px">
                 <Typography color="primary.light" align="justify">

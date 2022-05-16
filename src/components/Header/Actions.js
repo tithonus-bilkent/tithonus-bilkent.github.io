@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Routes } from "../../routes/Routes";
-import LinkIcon from "@mui/icons-material/Link";
+import OpenAppButton from "../OpenAppButton/OpenAppButton";
 
 const Actions = (props) => {
     const { className, onLinkClick } = props;
@@ -24,16 +24,7 @@ const Actions = (props) => {
                     Reports
                 </Button>
             </StyledLink>
-            <Button
-                variant="contained"
-                color="success"
-                onClick={() => {
-                    window.location.replace(`https://github.com/login/oauth/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_TITHONUS_URL}`);
-                }}
-                endIcon={<LinkIcon />}
-            >
-                Login with GitHub
-            </Button>
+            <OpenAppButton text="Login with GitHub" />
         </Container>
     );
 };

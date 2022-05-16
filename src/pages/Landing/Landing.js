@@ -1,6 +1,5 @@
 import {
     Box,
-    Button,
     Typography,
     List,
     ListItem,
@@ -10,13 +9,13 @@ import {
 import React from "react";
 import ReactPlayer from "react-player/youtube";
 import styled from "@emotion/styled";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Link } from "react-router-dom";
 import ImageIcon from "@mui/icons-material/Image";
 import Team from "~/components/Team/Team";
 import { Routes } from "~/routes/Routes";
 import ArticleIcon from "@mui/icons-material/Article";
 import Features from "~/components/Features/Features";
+import OpenAppButton from "~/components/OpenAppButton/OpenAppButton";
 
 const Landing = () => {
     return (
@@ -33,8 +32,15 @@ const Landing = () => {
                     The Next-Gen Code Review Tool
                 </Typography>
             </Box>
-            <Box marginTop="40px" display="flex" style={{ justifyContent: "center" }}>
-                <ReactPlayer url="https://www.youtube.com/watch?v=7xm70bfybMc" controls="true" />
+            <Box
+                marginTop="40px"
+                display="flex"
+                style={{ justifyContent: "center" }}
+            >
+                <ReactPlayer
+                    url="https://www.youtube.com/watch?v=7xm70bfybMc"
+                    controls="true"
+                />
             </Box>
             <Box marginTop="40px">
                 <Typography color="primary.light" align="justify">
@@ -54,16 +60,7 @@ const Landing = () => {
                 </Typography>
             </Box>
             <ButtonContainer>
-                <Button
-                    variant="contained"
-                    color="success"
-                    endIcon={<ArrowForwardIosIcon />}
-                    onClick={() =>
-                        window.location.replace(`https://github.com/login/oauth/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_TITHONUS_URL}`)
-                    }
-                >
-                    Login with GitHub Now
-                </Button>
+                <OpenAppButton text="Login with GitHub Now" />
             </ButtonContainer>
 
             <Box marginTop="40px">

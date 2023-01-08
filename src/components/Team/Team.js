@@ -8,7 +8,7 @@ export const Team = () => {
         <div>
             <Box display="flex" style={{ alignItems: "center" }}>
                 <Typography variant="h4" color="primary.light">
-                    Meet the team
+                    TEAM
                 </Typography>
                 <AvatarGroup style={{ marginLeft: "20px" }} max={6}>
                     <Tooltip title="Ziya Muktharov">
@@ -32,15 +32,9 @@ export const Team = () => {
                     <Tooltip title="Haluk Altunel">
                         <Avatar src="images/haluk.jpeg" />
                     </Tooltip>
-                    <Tooltip title="Murat Ergun">
-                        <Avatar sx={{ bgcolor: deepPurple[500] }}>ME</Avatar>
-                    </Tooltip>
                 </AvatarGroup>
             </Box>
             <Box marginTop="10px">
-                <Typography variant="h5" color="primary.light">
-                    Developers
-                </Typography>
                 <Box
                     display="flex"
                     style={{
@@ -79,68 +73,22 @@ export const Team = () => {
                         linkedInLink="https://www.linkedin.com/in/caqqolu/"
                         githubLink="https://github.com/Jaaw1d"
                     />
-                </Box>
-            </Box>
-            <Box marginTop="10px">
-                <Typography variant="h5" color="primary.light">
-                    Supervisor
-                </Typography>
-                <Box
-                    display="flex"
-                    style={{
-                        flexWrap: "wrap",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <TeamCard
-                        name="Eray Tüzün"
-                        imgSrc="images/eray.jpeg"
-                        linkedInLink="https://www.linkedin.com/in/tuzuneray/"
-                        githubLink="https://github.com/eraytuzun"
-                    />
+                  <TeamCard
+                    name="Eray Tüzün"
+                    imgSrc="images/eray.jpeg"
+                    linkedInLink="https://www.linkedin.com/in/tuzuneray/"
+                    githubLink="https://github.com/eraytuzun"
+                  />
+                  <TeamCard
+                    name="Haluk Altunel"
+                    imgSrc="images/haluk.jpeg"
+                    linkedInLink="https://www.linkedin.com/in/halukaltunel/"
+                  />
                 </Box>
             </Box>
 
-            <Box marginTop="10px">
-                <Typography variant="h5" color="primary.light">
-                    Technical Advisor
-                </Typography>
-                <Box
-                    display="flex"
-                    style={{
-                        flexWrap: "wrap",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <TeamCard
-                        name="Haluk Altunel"
-                        imgSrc="images/haluk.jpeg"
-                        linkedInLink="https://www.linkedin.com/in/halukaltunel/"
-                    />
-                </Box>
-            </Box>
-            <Box marginTop="10px">
-                <Typography variant="h5" color="primary.light">
-                    Innovation Expert
-                </Typography>
-                <Box
-                    display="flex"
-                    style={{
-                        flexWrap: "wrap",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <TeamCard
-                        name="Murat Ergun"
-                        initials="ME"
-                        color={deepPurple[500]}
-                        linkedInLink="https://www.linkedin.com/in/muratergun/"
-                    />
-                </Box>
-            </Box>
+
+
         </div>
     );
 };

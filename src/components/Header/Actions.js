@@ -14,14 +14,9 @@ const Actions = (props) => {
                     Home
                 </Button>
             </StyledLink>
-            <StyledLink to={Routes.Poster}>
-                <Button color="success" onClick={() => onLinkClick?.()}>
-                    Poster
-                </Button>
-            </StyledLink>
             <StyledLink to={Routes.Reports}>
                 <Button color="success" onClick={() => onLinkClick?.()}>
-                    Reports
+                    USER MANUAL
                 </Button>
             </StyledLink>
             <OpenAppButton text="Login with GitHub" />

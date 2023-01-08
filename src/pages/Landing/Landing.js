@@ -71,30 +71,11 @@ const Landing = () => {
                     <ListItem>
                         <ListItemAvatar>
                             <Avatar>
-                                <ImageIcon />
-                            </Avatar>
-                        </ListItemAvatar>
-                        <Typography color="primary.light">
-                            View Poster{" "}
-                            <Link
-                                to={Routes.Poster}
-                                style={{
-                                    textDecoration: "none",
-                                    color: "#81c784",
-                                }}
-                            >
-                                here
-                            </Link>
-                        </Typography>
-                    </ListItem>
-                    <ListItem>
-                        <ListItemAvatar>
-                            <Avatar>
                                 <ArticleIcon />
                             </Avatar>
                         </ListItemAvatar>
                         <Typography color="primary.light">
-                            View Reports{" "}
+                            View User Manual{" "}
                             <Link
                                 to={Routes.Reports}
                                 style={{

@@ -10,7 +10,6 @@ import React from "react";
 import ReactPlayer from "react-player/youtube";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
-import ImageIcon from "@mui/icons-material/Image";
 import Team from "~/components/Team/Team";
 import { Routes } from "~/routes/Routes";
 import ArticleIcon from "@mui/icons-material/Article";

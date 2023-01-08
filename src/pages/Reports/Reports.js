@@ -8,7 +8,6 @@ import {
     Button,
     ListItem,
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import IFrameCard from "../../components/PdfViewer/PdfViewer";
 

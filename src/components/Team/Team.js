@@ -1,6 +1,5 @@
 import { Avatar, AvatarGroup, Tooltip, Typography, Box } from "@mui/material";
 import React from "react";
-import { deepPurple } from "@mui/material/colors";
 import TeamCard from "./TeamCard";
 
 export const Team = () => {

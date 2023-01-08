@@ -10,7 +10,6 @@ import React from "react";
 import ReactPlayer from "react-player/youtube";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
-import ImageIcon from "@mui/icons-material/Image";
 import Team from "~/components/Team/Team";
 import { Routes } from "~/routes/Routes";
 import ArticleIcon from "@mui/icons-material/Article";
@@ -71,30 +70,11 @@ const Landing = () => {
                     <ListItem>
                         <ListItemAvatar>
                             <Avatar>
-                                <ImageIcon />
-                            </Avatar>
-                        </ListItemAvatar>
-                        <Typography color="primary.light">
-                            View Poster{" "}
-                            <Link
-                                to={Routes.Poster}
-                                style={{
-                                    textDecoration: "none",
-                                    color: "#81c784",
-                                }}
-                            >
-                                here
-                            </Link>
-                        </Typography>
-                    </ListItem>
-                    <ListItem>
-                        <ListItemAvatar>
-                            <Avatar>
                                 <ArticleIcon />
                             </Avatar>
                         </ListItemAvatar>
                         <Typography color="primary.light">
-                            View Reports{" "}
+                            View User Manual{" "}
                             <Link
                                 to={Routes.Reports}
                                 style={{

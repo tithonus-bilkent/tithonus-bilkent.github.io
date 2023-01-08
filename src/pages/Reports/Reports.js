@@ -1,17 +1,13 @@
 import React from "react";
 import styled from "@emotion/styled";
 import {
-    Accordion,
-    AccordionSummary,
     Typography,
-    AccordionDetails,
     Card,
     CardContent,
     List,
     Button,
     ListItem,
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import IFrameCard from "../../components/PdfViewer/PdfViewer";
 
@@ -21,31 +17,31 @@ const ITEMS = [
         reportName: "userManual",
         path: "UserManual.pdf",
     },
-    {
-        title: "Final Report",
-        reportName: "final",
-        path: "Final.pdf",
-    },
-    {
-        title: "Low Level Design",
-        reportName: "lowLevelDesign",
-        path: "LowLevelDesign.pdf",
-    },
-    {
-        title: "High Level Design",
-        reportName: "highLevelDesign",
-        path: "HighLevelDesign.pdf",
-    },
-    {
-        title: "Analysis",
-        reportName: "analysis",
-        path: "Analysis.pdf",
-    },
-    {
-        title: "Specifications",
-        reportName: "specifications",
-        path: "ProjectSpecifications.pdf",
-    },
+    // {
+    //     title: "Final Report",
+    //     reportName: "final",
+    //     path: "Final.pdf",
+    // },
+    // {
+    //     title: "Low Level Design",
+    //     reportName: "lowLevelDesign",
+    //     path: "LowLevelDesign.pdf",
+    // },
+    // {
+    //     title: "High Level Design",
+    //     reportName: "highLevelDesign",
+    //     path: "HighLevelDesign.pdf",
+    // },
+    // {
+    //     title: "Analysis",
+    //     reportName: "analysis",
+    //     path: "Analysis.pdf",
+    // },
+    // {
+    //     title: "Specifications",
+    //     reportName: "specifications",
+    //     path: "ProjectSpecifications.pdf",
+    // },
 ];
 
 export default function Reports() {
@@ -89,18 +85,11 @@ export default function Reports() {
             <Card>
                 <CardContent>
                     {ITEMS.map((item) => (
-                        <Accordion key={item.reportName}>
-                            <AccordionSummary
-                                expandIcon={<ExpandMoreIcon />}
-                                aria-controls="panel1a-content"
-                                id="panel1a-header"
-                            >
-                                <Typography>{item.title}</Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <IFrameCard reportName={item.reportName} />
-                            </AccordionDetails>
-                        </Accordion>
+                      <>
+                          <Typography style={{textAlign: 'center'}}>{item.title}</Typography>
+                          <IFrameCard reportName={item.reportName} />
+                      </>
+
                     ))}
                 </CardContent>
             </Card>

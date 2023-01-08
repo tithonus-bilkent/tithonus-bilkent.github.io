@@ -13,7 +13,7 @@ const TeamCard = (props) => {
     const { imgSrc, name, initials, color, linkedInLink, githubLink } = props;
 
     return (
-        <Card sx={{ width: 320, margin: "15px" }}>
+        <Card sx={{  height: 'auto', margin: "15px" }}>
             {imgSrc ? (
                 <CardMedia
                     component="img"

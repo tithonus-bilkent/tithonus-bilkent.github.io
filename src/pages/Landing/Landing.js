@@ -37,7 +37,7 @@ const Landing = () => {
                 style={{ justifyContent: "center" }}
             >
                 <ReactPlayer
-                    url="https://www.youtube.com/watch?v=7xm70bfybMc"
+                    url="https://www.youtube.com/watch?v=SWH7I8tZVkE"
                     controls="true"
                 />
             </Box>
